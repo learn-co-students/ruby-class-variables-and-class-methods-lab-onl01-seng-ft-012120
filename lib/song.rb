@@ -5,13 +5,11 @@ class Song
     @@genres = []
 # Class Methods
   def self.artists
-    uniq_array = @@artists.uniq
-    uniq_array
+    @@artists.uniq
   end
 
   def self.genres
-    uniq_array = @@genres.uniq
-    uniq_array
+    @@genres.uniq
   end
 
   def self.count
@@ -25,9 +23,10 @@ class Song
   def self.artist_count
     @@artists.to_h{|value, count| [value, count= @@artists.count(value)]}
   end
+  
 # Instance Variables
   attr_accessor :name, :artist, :genre
-  
+
 # Instance Methods
   def initialize(name, artist, genre)
     self.name= name
