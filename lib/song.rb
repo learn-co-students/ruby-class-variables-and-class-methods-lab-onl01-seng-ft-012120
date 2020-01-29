@@ -17,11 +17,11 @@ class Song
   end
 
   def self.genre_count
-    @@genres.to_h{|value, count| [value, count= @@genres.count(value)]}
+    @@genres.to_h{|value, count| [value, count= @@genres.count(value)]} # count only have readability purposes
   end
 
   def self.artist_count
-    @@artists.to_h{|value, count| [value, count= @@artists.count(value)]}
+    @@artists.to_h{|value, count| [value, count= @@artists.count(value)]} # count only have readability purposes
   end
   
 # Instance Variables
