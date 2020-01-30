@@ -51,6 +51,4 @@ class Song
   def self.artists
     return @@artists.uniq
   end 
-
-  
 end 
